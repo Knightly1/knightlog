@@ -155,7 +155,7 @@ public:
 	{
 		if(!m_colorlevels.empty() && m_colorlevels.find(i) != m_colorlevels.end())
 		{
-			const int length = color.size();
+			const int length = static_cast<int>(color.size());
 			// Valid colors are single letter, 3 letter, or 6 digit hex
 			if (length == 1 || length == 3 || length == 7)
 			{
